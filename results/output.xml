@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on darwin)" generated="2025-08-04T22:58:29.189248" rpa="false" schemaversion="5">
+<suite id="s1" name="demoblaze POM" source="/Users/admin/PycharmProjects/demoblazer/Test/demoblaze_POM.robot">
+<test id="s1-t1" name="User_Can_Login_With_Valid_Credentials" line="21">
+<kw name="Common - Open Demoblaze Website" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-04T22:58:29.575092" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-04T22:58:29.574647" elapsed="3.139178"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-04T22:58:32.716878" elapsed="0.598761"/>
+</kw>
+<kw name="Start Video Recording">
+<msg time="2025-08-04T22:58:33.329176" level="FAIL">No keyword with name 'Start Video Recording' found.</msg>
+<status status="FAIL" start="2025-08-04T22:58:33.329003" elapsed="0.000612">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:29.573234" elapsed="3.757103">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<kw name="Common - Close Browser Session" owner="common_keywords" type="TEARDOWN">
+<kw name="Common - Stop Screen Record" owner="common_keywords">
+<kw name="Stop Video Recording">
+<msg time="2025-08-04T22:58:33.338225" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<var>${file_name}</var>
+<status status="FAIL" start="2025-08-04T22:58:33.338100" elapsed="0.000275">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Run Keyword If Test Passed" owner="BuiltIn">
+<arg>Remove File</arg>
+<arg>${file_name}</arg>
+<doc>Runs the given keyword with the given arguments, if the test passed.</doc>
+<status status="PASS" start="2025-08-04T22:58:33.338744" elapsed="0.000428"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:33.333624" elapsed="0.005770">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-04T22:58:33.339601" elapsed="0.234904"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:33.332749" elapsed="0.242070">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:29.571860" elapsed="4.003235">Setup failed:
+No keyword with name 'Start Video Recording' found.
+
+Also teardown failed:
+No keyword with name 'Stop Video Recording' found.</status>
+</test>
+<test id="s1-t2" name="User_Cannot_Login_With_Invalid_Password" line="28">
+<kw name="Common - Open Demoblaze Website" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-04T22:58:33.577489" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-04T22:58:33.576989" elapsed="2.009168"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-04T22:58:35.586681" elapsed="0.566112"/>
+</kw>
+<kw name="Start Video Recording">
+<msg time="2025-08-04T22:58:36.159342" level="FAIL">No keyword with name 'Start Video Recording' found.</msg>
+<status status="FAIL" start="2025-08-04T22:58:36.159252" elapsed="0.000216">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:33.576609" elapsed="2.583182">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<kw name="Common - Close Browser Session" owner="common_keywords" type="TEARDOWN">
+<kw name="Common - Stop Screen Record" owner="common_keywords">
+<kw name="Stop Video Recording">
+<msg time="2025-08-04T22:58:36.165111" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<var>${file_name}</var>
+<status status="FAIL" start="2025-08-04T22:58:36.165015" elapsed="0.000181">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Run Keyword If Test Passed" owner="BuiltIn">
+<arg>Remove File</arg>
+<arg>${file_name}</arg>
+<doc>Runs the given keyword with the given arguments, if the test passed.</doc>
+<status status="PASS" start="2025-08-04T22:58:36.165492" elapsed="0.000180"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:36.161318" elapsed="0.004667">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-04T22:58:36.166212" elapsed="0.108044"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:36.160690" elapsed="0.113761">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:33.575843" elapsed="2.698847">Setup failed:
+No keyword with name 'Start Video Recording' found.
+
+Also teardown failed:
+No keyword with name 'Stop Video Recording' found.</status>
+</test>
+<test id="s1-t3" name="User_Can_View_Product_Details" line="34">
+<kw name="Common - Open Demoblaze Website" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-04T22:58:36.276802" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-04T22:58:36.276495" elapsed="2.235907"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-04T22:58:38.513372" elapsed="0.579379"/>
+</kw>
+<kw name="Start Video Recording">
+<msg time="2025-08-04T22:58:39.101358" level="FAIL">No keyword with name 'Start Video Recording' found.</msg>
+<status status="FAIL" start="2025-08-04T22:58:39.101257" elapsed="0.000239">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:36.276105" elapsed="2.825702">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<kw name="Common - Close Browser Session" owner="common_keywords" type="TEARDOWN">
+<kw name="Common - Stop Screen Record" owner="common_keywords">
+<kw name="Stop Video Recording">
+<msg time="2025-08-04T22:58:39.107753" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<var>${file_name}</var>
+<status status="FAIL" start="2025-08-04T22:58:39.107670" elapsed="0.000163">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Run Keyword If Test Passed" owner="BuiltIn">
+<arg>Remove File</arg>
+<arg>${file_name}</arg>
+<doc>Runs the given keyword with the given arguments, if the test passed.</doc>
+<status status="PASS" start="2025-08-04T22:58:39.108073" elapsed="0.000194"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:39.103695" elapsed="0.004808">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-04T22:58:39.108762" elapsed="0.118505"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:39.102898" elapsed="0.124556">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:36.275260" elapsed="2.952316">Setup failed:
+No keyword with name 'Start Video Recording' found.
+
+Also teardown failed:
+No keyword with name 'Stop Video Recording' found.</status>
+</test>
+<test id="s1-t4" name="User_Can_Add_Prod_To_Cart" line="38">
+<kw name="Common - Open Demoblaze Website" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-04T22:58:39.230087" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-04T22:58:39.229472" elapsed="2.309170"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-04T22:58:41.539198" elapsed="0.588906"/>
+</kw>
+<kw name="Start Video Recording">
+<msg time="2025-08-04T22:58:42.134355" level="FAIL">No keyword with name 'Start Video Recording' found.</msg>
+<status status="FAIL" start="2025-08-04T22:58:42.134205" elapsed="0.000245">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:39.228871" elapsed="2.905963">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<kw name="Common - Close Browser Session" owner="common_keywords" type="TEARDOWN">
+<kw name="Common - Stop Screen Record" owner="common_keywords">
+<kw name="Stop Video Recording">
+<msg time="2025-08-04T22:58:42.140938" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<var>${file_name}</var>
+<status status="FAIL" start="2025-08-04T22:58:42.140846" elapsed="0.000203">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Run Keyword If Test Passed" owner="BuiltIn">
+<arg>Remove File</arg>
+<arg>${file_name}</arg>
+<doc>Runs the given keyword with the given arguments, if the test passed.</doc>
+<status status="PASS" start="2025-08-04T22:58:42.141445" elapsed="0.000202"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:42.136545" elapsed="0.005390">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-04T22:58:42.142171" elapsed="0.118938"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:42.135736" elapsed="0.125678">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:39.228033" elapsed="3.033575">Setup failed:
+No keyword with name 'Start Video Recording' found.
+
+Also teardown failed:
+No keyword with name 'Stop Video Recording' found.</status>
+</test>
+<test id="s1-t5" name="User_Can_Remove_Prod_From_Cart" line="43">
+<kw name="Common - Open Demoblaze Website" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-04T22:58:42.264031" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-04T22:58:42.263638" elapsed="2.115464"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-04T22:58:44.379750" elapsed="0.337742"/>
+</kw>
+<kw name="Start Video Recording">
+<msg time="2025-08-04T22:58:44.719946" level="FAIL">No keyword with name 'Start Video Recording' found.</msg>
+<status status="FAIL" start="2025-08-04T22:58:44.719879" elapsed="0.000147">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:42.263103" elapsed="2.457194">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<kw name="Common - Close Browser Session" owner="common_keywords" type="TEARDOWN">
+<kw name="Common - Stop Screen Record" owner="common_keywords">
+<kw name="Stop Video Recording">
+<msg time="2025-08-04T22:58:44.724061" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<var>${file_name}</var>
+<status status="FAIL" start="2025-08-04T22:58:44.723996" elapsed="0.000120">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Run Keyword If Test Passed" owner="BuiltIn">
+<arg>Remove File</arg>
+<arg>${file_name}</arg>
+<doc>Runs the given keyword with the given arguments, if the test passed.</doc>
+<status status="PASS" start="2025-08-04T22:58:44.724314" elapsed="0.000127"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:44.721361" elapsed="0.003209">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-04T22:58:44.724713" elapsed="0.117012"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:44.720937" elapsed="0.120979">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:42.262285" elapsed="2.579781">Setup failed:
+No keyword with name 'Start Video Recording' found.
+
+Also teardown failed:
+No keyword with name 'Stop Video Recording' found.</status>
+</test>
+<test id="s1-t6" name="User_Can_Place_An_Order_Successfully" line="51">
+<kw name="Common - Open Demoblaze Website" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-04T22:58:44.843804" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-04T22:58:44.843482" elapsed="2.070969"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-04T22:58:46.915457" elapsed="0.606584"/>
+</kw>
+<kw name="Start Video Recording">
+<msg time="2025-08-04T22:58:47.526449" level="FAIL">No keyword with name 'Start Video Recording' found.</msg>
+<status status="FAIL" start="2025-08-04T22:58:47.526349" elapsed="0.000202">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:44.843141" elapsed="2.683629">No keyword with name 'Start Video Recording' found.</status>
+</kw>
+<kw name="Common - Close Browser Session" owner="common_keywords" type="TEARDOWN">
+<kw name="Common - Stop Screen Record" owner="common_keywords">
+<kw name="Stop Video Recording">
+<msg time="2025-08-04T22:58:47.532400" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<var>${file_name}</var>
+<status status="FAIL" start="2025-08-04T22:58:47.532295" elapsed="0.000206">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Run Keyword If Test Passed" owner="BuiltIn">
+<arg>Remove File</arg>
+<arg>${file_name}</arg>
+<doc>Runs the given keyword with the given arguments, if the test passed.</doc>
+<status status="PASS" start="2025-08-04T22:58:47.532843" elapsed="0.000238"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:47.528128" elapsed="0.005221">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-04T22:58:47.533616" elapsed="0.111895"/>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:47.527503" elapsed="0.118201">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<status status="FAIL" start="2025-08-04T22:58:44.842472" elapsed="2.803358">Setup failed:
+No keyword with name 'Start Video Recording' found.
+
+Also teardown failed:
+No keyword with name 'Stop Video Recording' found.</status>
+</test>
+<status status="FAIL" start="2025-08-04T22:58:29.192651" elapsed="18.454201"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="demoblaze POM" id="s1" pass="0" fail="6" skip="0">demoblaze POM</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-08-04T22:58:29.535891" level="ERROR">Error in file '/Users/admin/PycharmProjects/demoblazer/config/imports.resource' on line 3: Importing library 'ScreenCapLibrary' failed: ModuleNotFoundError: No module named 'ScreenCapLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/admin/PycharmProjects/PythonProject/.venv/bin
+  /usr/local/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python313.zip
+  /usr/local/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13
+  /usr/local/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload
+  /Users/admin/PycharmProjects/PythonProject/.venv/lib/python3.13/site-packages</msg>
+</errors>
+</robot>

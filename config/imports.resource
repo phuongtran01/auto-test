@@ -1,6 +1,5 @@
 *** Settings ***
 Library     SeleniumLibrary    timeout=30
-Library     ScreenCapLibrary
 Library     OperatingSystem
 Resource    ../common/common_keywords.resource
 Resource    ../pages/cart/cart_keywords.resource

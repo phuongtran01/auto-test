@@ -7,10 +7,8 @@ Resource    common_variables.resource
 Common - Open Demoblaze Website
     Open Browser    ${url}    ${browser_name}
     Maximize Browser Window
-    Start Video Recording
 
 Common - Close Browser Session
-    Common - Stop Screen Record
     Close Browser
 
 Common - Wait and Click Element
@@ -25,6 +23,4 @@ Common - Wait and Input Text
     Sleep    2s
     Input Text    ${element}    ${text}
 
-Common - Stop Screen Record
-    ${file_name}=    Stop Video Recording
-    Run Keyword If Test Passed    Remove File    ${file_name}
+

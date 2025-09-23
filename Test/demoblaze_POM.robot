@@ -3,8 +3,6 @@ Resource            ../config/imports.resource
 
 Test Setup          Common - Open Demoblaze Website
 Test Teardown       Common - Close Browser Session
-# Suite Setup
-# Suite Teardown
 
 
 *** Variables ***

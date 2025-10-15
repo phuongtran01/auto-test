@@ -30,7 +30,7 @@ Fill login form
     Wait Until Element Is Visible    ${INPUT_EMAIL}    ${TIMEOUT}
     Sleep    1s
     Common - Input Text    ${INPUT_EMAIL}    ${EMAIL}    ${TIMEOUT}
-    Common - Input Text    ${INPUT_EMAIL}    ${PASSWORD}    ${TIMEOUT}
+    Common - Input Text    ${INPUT_PASSWORD}    ${PASSWORD}    ${TIMEOUT}
 
 Submit login form
     Common - Click Element    ${BTN_SUBMIT}    ${TIMEOUT}

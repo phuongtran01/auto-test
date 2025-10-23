@@ -31,7 +31,6 @@ Fill login form
     Sleep    1s
     Common - Input Text    ${INPUT_EMAIL}    ${EMAIL}    ${TIMEOUT}
     Common - Input Text    ${INPUT_EMAIL}    ${PASSWORD}    ${TIMEOUT}
-    Common - Input Text    ${EMAIL}    ${PASSWORD}    ${TIMEOUT}
 
 Submit login form
     Common - Click Element    ${BTN_SUBMIT}    ${TIMEOUT}

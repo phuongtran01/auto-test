@@ -28,8 +28,9 @@ Open CMS
 Fill login form
     [Arguments]    ${email}    ${password}
     Wait Until Element Is Visible    ${INPUT_EMAIL}    ${TIMEOUT}
-    Sleep    1s
+    Sleep    0.5s
     Common - Input Text    ${INPUT_EMAIL}    ${EMAIL}    ${TIMEOUT}
+    Common - Input Text    ${EMAIL}    ${PASSWORD}    ${TIMEOUT}
     Common - Input Text    ${INPUT_EMAIL}    ${PASSWORD}    ${TIMEOUT}
 
 Submit login form
